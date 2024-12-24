@@ -55,7 +55,7 @@ The system uses two main entities:
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/Jorge1640/Management.git
 ```
 
 2. Create a `.env` file in the root directory with the following variables:
@@ -89,7 +89,7 @@ The application will be available at:
 
 1. Navigate to the frontend directory:
 ```bash
-cd frontend
+cd client
 ```
 
 2. Install dependencies:
@@ -170,7 +170,3 @@ spring.security.oauth2.client.registration.google.redirect-uri=http://localhost:
 ## 🤝 Contributing
 
 [Previous contributing section remains the same]
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details

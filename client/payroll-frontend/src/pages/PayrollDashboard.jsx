@@ -163,22 +163,7 @@ const PayrollDashboard = () => {
           <div className="flex justify-between items-center mb-6">
   <h2 className="text-2xl font-bold">Dashboard de Nóminas</h2>
   <div className="flex space-x-4">
-  <button 
-  onClick={handleLogin}
-  className={styles.brutalistButton}
->
-  <div className={styles.msLogo}>
-    <div className={styles.msLogoSquare}></div>
-    <div className={styles.msLogoSquare}></div>
-    <div className={styles.msLogoSquare}></div>
-    <div className={styles.msLogoSquare}></div>
-  </div>
-  <div className={styles.buttonText}>
-    <span>Usuario</span>
-    <span>Login</span>
-  </div>
-</button>
-    <button 
+      <button 
       onClick={handleNewPayroll}
       className="flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
     >

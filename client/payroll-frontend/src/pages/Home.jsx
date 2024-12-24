@@ -3,8 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import styles from '../components/BrutalistButton.module.css';
 import { Building2, Users, LineChart } from 'lucide-react';
 
+
+
+
+
 const HomePage = () => {
   const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate('/login');
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
@@ -16,11 +24,20 @@ const HomePage = () => {
               <Building2 className="h-8 w-8 text-blue-600" />
               <span className="ml-2 text-xl font-semibold text-gray-800">PayrollPro</span>
             </div>
-            <button 
-              onClick={() => navigate('/login')}
-              className={`${styles.brutalistButton} bg-blue-600 hover:bg-blue-700 text-white px-4 py-2`}
+            <button
+              onClick={handleLogin}
+              className={styles.brutalistButton}
             >
-              Iniciar Sesión
+              <div className={styles.msLogo}>
+                <div className={styles.msLogoSquare}></div>
+                <div className={styles.msLogoSquare}></div>
+                <div className={styles.msLogoSquare}></div>
+                <div className={styles.msLogoSquare}></div>
+              </div>
+              <div className={styles.buttonText}>
+                <span>Usuario</span>
+                <span>Login</span>
+              </div>
             </button>
           </div>
         </div>
